@@ -1,41 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="main.css">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <style>
-        
-    </style>
 </head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+   .FrontViwe{width: 100%; height: 500px; 
+     background-repeat: no-repeat;
+      background-size: cover;
+      background-image:url(mainimg.PNG);
+    }
+    
+    
+   .size{
+    margin-top: 30px;
+    color: white;
+
+   } 
+   .fluid-container{
+    z-index: 2;
+   }
+   .HeadBody{
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    position: relative;
+    top: 80px;
+    
+   }
+.H1Heading{
+    color: white;
+}
+.cotation{
+    color:white;
+}
+.serch{
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.contAline{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* /*relate to second page orders related */
+.items{
+    width: 30%;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 10px;
+   
+    
+}
+.orders{
+    background-image: url("orders.jpg");
+    width: 100%;
+    box-sizing: border-box;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.diner{
+    background-image: url("diner.jpg");
+    width: 100%;
+    box-sizing: border-box;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.night{
+    background-image: url("night.jpg");
+    width: 100%;
+    box-sizing: border-box;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+   
+}
+.orders:hover {
+   /* width: 31%;
+    height: 51vh;*/
+}
+.bottom-info{
+
+}
+/*relate to second page orders related */
+
+
+/*DIFFERENT TYPES OF PLACES*/
+.baners{
+    width: 20%;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/*legend css propaties*/
+.legend{
+    background-image: url("");
+}
+
+.Picturesque-Cafes{
+    background-image: url("");
+}
+.lplaces{
+    font-size: 20PX;
+}
+
+/*legend css propaties*/
+/*DIFFERENT TYPES OF PLACES*/
+
+
+.places{
+    width: 30%;
+    height: 15vh;
+    margin: 15px 15px 15px 15px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+.places:hover{
+    box-shadow: 5px 5px 3px rgb(152, 214, 230) ;
+}
+.more-places{
+    display: none;
+}
+.show-more:hover .more-places{
+    display: block;
+}
+.col-3{
+    padding: 0px;
+}
+
+</style>
 <body>
-    <div class="fluid-container topnav">
-        <div class="row">
-           
-                <div class="col-2"> Emai_Id</div>
-                <div class="col-2"> Contoct</div>
-                <div  class="col-2"> Admission</div>
-                <div  class="col-2"> Student Login</div>
-                <div  class="col-2"> Apply Online</div>
-               <div  class="col-1"> Gallery</div>
-                
-           
-        </div>
-    </div>
-    <div class="fluid-container bottom-nav">
-        <div class="row">
-           
-            <div class="col-2">image</div>
-            <div class="col-1">Institue</div>
-            <div class="col-2"> Embedded Systems</div>
-            <div class="col-2"> FullStackDevelopment</div>
-            <div class="col-2"> Short term Courcess</div>
-            <div class="col-1"> Workshops</div>
-            <div class="col-1"> coporates</div>
-            <div class="col-1"> Placements</div>
+    <div class="FrontViwe">
+        <div class="container">
+           <div class="row">
+                <div class="col-4 size"></div>
+                <div class="col-2 size" >INvestors Relations</div>
+                <div class="col-2 size">Add Restaurent</div>
+                <div class="col-2 size">Login</div>
+                <div class="col-2 size">Sing Up</div>
+
+                <div class="HeadBody col-12 sm-col-3">
+                    <h1 class="H1Heading">Zomato</h1>
+                    <h1 class="cotation">Discover the best food & drinks in Hyderabad</h1>
+                    <input class="serch" placeholder="Serch for Restaurent,Cuisine or a dish">
+                </div>
+
+             </div>
 
         </div>
     </div>
+
+
+
+    <!-- this is the order section-->
+    <div class="container contAline">
+            <div class="row">
+            <div class="items  col-3 ">
+                  <div class="orders"></div>
+                   <h3>Order Online</h3>
+                   <div class="bottom-info">Stay home and order to your doorstep</div>
+                </div>
+            <div class="items col-3 ">
+                <div class="diner"></div>
+                <h3>Dinner</h3>
+                <div class="bottom-info">View the city favourite dinner venues</div>
+            </div>
+            <div class="items  col-3 ">
+               <div class="night"></div>
+                <h3>Nightlife and clubs</h3>
+                <div class="bottom-info">Explore the city top higlifte outlets</div>
+            </div>
+            </div>
+  
+    </div>
+    <!-- this is the order section-->
+
+
+    <!--COLLECTIONS OF PLACESS-->
+
+    <div class="container contAline">
+        <div class="row">
+            <div class="offersh1 col-12 "><h1>Collections</h1></div>
+            <div class="cotation2 col-8">Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</div>
+            <div class="col-4">All collections in Hyderabad</div>
+             <div class="baners col-4" ><div ><span class="lplaces"> Picturesque cafes</span> <br><span>5 places</span> </div></div>
+            <div class="baners col-4 Picturesque-Cafes"><div ><span class="lplaces"> Incredible themed Dinning </span><br><span>5 places</span>  <span></span> </div></div>
+            <div class="baners col-4 legend" ><div ><span class="lplaces"> Legends of HYdarabad </span><br><span>5 places</span>  <span></span> </div></div>
+        
+        </div>
+
+    </div>
+ <!--COLLECTIONS OF PLACESS-->
+
+
+ <!--PLACESS LISTES -->
+
+<div class="container">
+    <div class="row">
+        <div class="places col-4"><span>Jubilee Hills</span></div>
+        <div class="places col-4"><span>Gachibowli</span></div>
+        <div class="places col-4"> <span> Banjara Hills</span> </div>
+        <div class="places col-4">  <span> Hitech City</span>  </div>
+        <div class="places col-4"> <span>  Madhapur</span></div>
+        <div class="places col-4 show-more"><span>KOndapur</span> </div>
+    </div>
+</div>
+ <!--PLACESS LISTES -->
+ 
+<div class="container more-places">
+    <div class="row">
+        <div class="places col-4">Kukatpally</div>
+        <div class="places col-4">Begumpet</div>
+        <div class="places col-4"> Ameerpet</div>
+        <div class="places col-4"></div>
+        <div class="places col-4"></div>
+        <div class="places col-4"></div>
+    </div>
+</div>
 </body>
 </html>
